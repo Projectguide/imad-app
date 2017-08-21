@@ -20,7 +20,7 @@ var articleOne = {
                  this is the html page linking to the server.js file
             </p>`
 };
-function createTemplate (data){
+function createTemplate(data){
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
