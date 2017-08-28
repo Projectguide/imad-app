@@ -54,7 +54,7 @@ var config = {
     user: 'rdevi',
     database: 'rdevi',
     host: 'db.imad.hasura-app.io',
-    password: 'db-rdevi-82790'
+    password: 'db-rdevi-82907'
 };
 
 app.get('/', function (req, res) {
