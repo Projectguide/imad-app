@@ -57,11 +57,21 @@ var config = {
     port: '5432',
     password: 'db-rdevi-82790'
 };
-var pool = new Pool(config);
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var pool = new Pool(config);
+app.get('/test-db', function (req, res) {
+    pool.query('SELECT * FROM article', function (err, result){
+        if (err){
+            res.status(500).send(err, tostring());
+        }
+        else{
+            res.send(JSON.string(fy(result)));
+        }
+    });
+});
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
@@ -74,16 +84,7 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
-app.get('/test-db', function (req, res) {
-    pool.query('SELECT * FROM article', function (err, result){
-        if (err){
-            res.status(500).send(err, tostring());
-        }
-        else{
-            res.send(JSON.string(fy(result)));
-        }
-    });
-});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
