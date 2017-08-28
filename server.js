@@ -50,7 +50,14 @@ function createTemplate(data){
 </html>`;
 }
 app.use(morgan('combined'));
-
+var config = {
+    user: 'rdevi',
+    database: 'rdevi',
+    host: 'db.imad.hasura-app.io',
+    port: '5432',
+    password: process.env.DB_PASSWORD
+};
+var pool = new pool(config);
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -67,7 +74,16 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
-
+app.get('/test-db', function (req, res) {
+    pool.query('SELECT * FROM article', function (err, result){
+        if (err){
+            res.status(500).send(err, tostring());
+        }
+        else{
+            res.send(JSON.string(fy(result)));
+        }
+    });
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
