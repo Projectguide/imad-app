@@ -54,7 +54,7 @@ var config = {
     user: 'rdevi',
     database: 'rdevi',
     host: 'db.imad.hasura-app.io',
-    port: '5432',
+    port: '80',
     password: process.env.DB_PASSWORD
 };
 var pool = new Pool(config);
