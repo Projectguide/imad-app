@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type = "text/css" href = "ui/alternate.css"?>
+<?xml-stylesheet type = "text/css" href = "alternate.css"?>
 <!DOCTYPE Catalog [
 <!ELEMENT Catalog (Item+) >
 <!ELEMENT Item (Name,Description,Price) >
