@@ -1,0 +1,12 @@
+<?xml version=”1.0”?>
+<!--
+This is referencing the style sheet from Listing 11.6 –
+we are calling it notestyle.css here
+-->
+<?xml-stylesheet type=”text/css” href=”style.css”?>
+<Note>
+<From>From: Bob</From>
+<To>To: Jenny</To>
+<Subject>Subject: Hello Friend!</Subject>
+<Body>Just thought I would drop you a line.</Body>
+</Note>
