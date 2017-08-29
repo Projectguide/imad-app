@@ -8,7 +8,7 @@ Item
 display:block;
 margin-bottom:5px
 }
-Item.Odd
+.Odd
 {
 background:#dcdcdc
 }
