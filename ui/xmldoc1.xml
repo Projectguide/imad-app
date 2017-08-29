@@ -1,7 +1,4 @@
-<!--
-This is referencing the style sheet from Listing 11.6 –
-we are calling it notestyle.css here
--->
+<!--This is referencing the style sheet from Listing 11.6 – we are calling it notestyle.css here -->
 <?xml-stylesheet type=”text/css” href=”ui/style.css”?>
 <Note>
 <From>From: Bob</From>
