@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+This is a reference to the style sheet in Listing 11.8
+– It is referred to as alternate.css here
+-->
+<?xml-stylesheet type="text/css" href="ui/alternate.css"?>
+<!DOCTYPE Catalog [
+<!ELEMENT Catalog (Item+) >
+<!ELEMENT Item (Name,Description,Price) >
+<!ATTLIST Item Class CDATA #IMPLIED >
+<!ELEMENT Name (#PCDATA) >
+<!ELEMENT Description (#PCDATA) >
+<!ELEMENT Price (#PCDATA) >
+]>
+<Catalog>
+<Item Class=”Odd”>
+<Name>Gloves</Name>
+<Description>10 oz. sparring gloves</Description>
+<Price>$29.99</Price>
+</Item>
+<Item>
+<Name>Head Gear</Name>
+<Description>Padded foam head protection for sparring</Description>
+<Price>$49.99</Price>
+</Item>
+<Item Class=”Odd”>
+<Name>Speed Bag</Name>
+<Description>5 lb. punching bag</Description>
+<Price>$50.00</Price>
+</Item>
+<Item>
+<Name>Heavy Bag</Name>
+<Description>100 lb. punching bag</Description>
+<Price>$109.95</Price>
+</Item>
+<Item Class=”Odd”>
+<Name>Judo Dogi</Name>
+<Description>Single weave Judo uniform</Description>
+<Price>$59.95</Price>
+</Item>
+<Item>
+<Name>Karate Dogi</Name>
+<Description>Light weight karate uniform</Description>
+<Price>$19.95</Price>
+</Item>
+</Catalog>
