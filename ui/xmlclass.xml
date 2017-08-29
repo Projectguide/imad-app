@@ -1,8 +1,4 @@
 <?xml version="1.0"?>
-<!--
-This is a reference to the style sheet in Listing 11.8
-– It is referred to as alternate.css here
--->
 <?xml-stylesheet type="text/css" href="ui/alternate.css"?>
 <!DOCTYPE Catalog [
 <!ELEMENT Catalog (Item+) >
