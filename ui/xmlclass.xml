@@ -13,7 +13,7 @@ This is a reference to the style sheet in Listing 11.8
 <!ELEMENT Price (#PCDATA) >
 ]>
 <Catalog>
-<Item Class=”Odd”>
+<Item Class="Odd">
 <Name>Gloves</Name>
 <Description>10 oz. sparring gloves</Description>
 <Price>$29.99</Price>
@@ -23,7 +23,7 @@ This is a reference to the style sheet in Listing 11.8
 <Description>Padded foam head protection for sparring</Description>
 <Price>$49.99</Price>
 </Item>
-<Item Class=”Odd”>
+<Item Class="Odd">
 <Name>Speed Bag</Name>
 <Description>5 lb. punching bag</Description>
 <Price>$50.00</Price>
@@ -33,7 +33,7 @@ This is a reference to the style sheet in Listing 11.8
 <Description>100 lb. punching bag</Description>
 <Price>$109.95</Price>
 </Item>
-<Item Class=”Odd”>
+<Item Class="Odd">
 <Name>Judo Dogi</Name>
 <Description>Single weave Judo uniform</Description>
 <Price>$59.95</Price>
