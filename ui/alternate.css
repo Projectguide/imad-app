@@ -1,0 +1,27 @@
+<!--This style sheet shall be referenced as alternate.css -->
+Catalog
+{
+display:block
+}
+Item
+{
+display:block;
+margin-bottom:5px
+}
+Item.Odd
+{
+background:#dcdcdc
+}
+Name
+{
+display:block;
+font-family:verdana;
+font-size:14px;
+font-weight:bold
+}
+Description, Price
+{
+display:block;
+font-family:arial;
+font-size:12px
+}
